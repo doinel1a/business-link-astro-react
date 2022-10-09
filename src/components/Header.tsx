@@ -45,7 +45,7 @@ export default function Header() {
 			</div>
 			<div className='w-52 h-52 flex justify-center items-center mx-auto mb-6 p-1 rounded-full bg-accent-primary'>
 				<img
-					src={`${meta_tags.app_url}/hero-image.png`}
+					src={details.hero_image_url}
 					width={480}
 					height={480}
 					className='rounded-full'
