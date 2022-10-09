@@ -1,0 +1,31 @@
+---
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import links from '../config/links';
+---
+
+<ul class='w-full h-full flex flex-col gap-y-5 mt-6'>
+	{
+		links.map((link) => (
+			<li
+				title={link.text}
+				tabindex={0}
+				class='relative rounded-full bg-accent-primary transition-all duration-200 hover:bg-accent-primary-state hover:-translate-y-1'
+			>
+				<a
+					href={link.url}
+					target='_blank'
+					rel='noopener'
+					tabindex={-1}
+					class='w-full h-full flex items-center p-3 rounded-full'
+				>
+					<FontAwesomeIcon
+						icon={link.icon}
+						className='w-6 h-6 absolute m-3 text-color-dark'
+					/>
+					<span class='mx-auto text-color-dark'>{link.text}</span>
+				</a>
+			</li>
+		))
+	}
+</ul>
