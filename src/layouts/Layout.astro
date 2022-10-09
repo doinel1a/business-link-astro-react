@@ -52,8 +52,11 @@ const { title, description } = Astro.props;
 		/>
 		<meta property='twitter:image' content={meta_tags.og_image_url} />
 	</head>
-	<body>
+	<body
+		class='w-full max-w-2xl min-h-screen flex flex-col justify-center items-center mx-auto p-8 bg-primary-light dark:bg-primary-dark'
+	>
 		<slot />
+
 		<script>
 			import colors from '../config/colors';
 
