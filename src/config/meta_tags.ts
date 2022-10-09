@@ -1,4 +1,4 @@
-const app_url = 'https://business-link-astro.d1a.app';
+const app_url = 'https://business-link-astro-react.d1a.app';
 
 const meta_tags = {
 	app_url,
