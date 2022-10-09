@@ -1,11 +1,11 @@
 {
 	"private": true,
-	"name": "business-link-astro",
+	"name": "business-link-astro-react",
 	"version": "0.0.1",
 	"type": "module",
 	"author": "Doinel Atanasiu - doinel1atanasiu@gmail.com",
-	"description": "Open source Linktree alternative developed with Astro, TypeScript & Tailwind CSS.",
-	"repository": "https://github.com/doinel1a/business-link-astro",
+	"description": "Open source Linktree alternative developed with Astro, React, TypeScript & Tailwind CSS.",
+	"repository": "https://github.com/doinel1a/business-link-astro-react",
 	"license": "MIT",
 	"scripts": {
 		"dev": "astro dev",
