@@ -10,8 +10,13 @@ h2 {
 	@apply text-lg sm:text-xl md:text-2xl lg:text-3xl;
 }
 
+h3 {
+	@apply sm:text-lg md:text-xl lg:text-2xl;
+}
+
 h1,
 h2,
+h3,
 footer span {
 	@apply text-color-light dark:text-color-dark;
 }
@@ -19,6 +24,7 @@ footer span {
 body,
 h1,
 h2,
+h3,
 footer span {
 	@apply transition-colors duration-200;
 }

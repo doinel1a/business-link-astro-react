@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+---
+
+<Layout title='404 - Page not found'>
+	<h1 class='font-bold'>404</h1>
+	<h2>A secret place has been found.</h2>
+	<h3 class='text-center'>
+		You may have mistyped the address or the page has been moved to another
+		URL.
+	</h3>
+	<a
+		href='/'
+		class='group flex justify-center items-center mt-4 px-2 py-1 rounded-full'
+	>
+		<FontAwesomeIcon
+			icon={faHome}
+			className='w-6 h-6 mr-2 text-accent-primary transition-colors duration-200 group-hover:text-accent-primary-state group-focus:text-accent-primary-state'
+		/>
+		<span
+			class='md:text-lg lg:text-xl text-accent-primary transition-colors duration-200 group-hover:text-accent-primary-state group-focus:text-accent-primary-state'
+		>
+			Back to home page
+		</span>
+	</a>
+</Layout>
