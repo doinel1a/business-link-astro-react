@@ -54,5 +54,15 @@ const { title, description } = Astro.props;
 	</head>
 	<body>
 		<slot />
+		<script>
+			import colors from '../config/colors';
+
+			colors.map((color) => {
+				document.documentElement.style.setProperty(
+					color.property,
+					color.value
+				);
+			});
+		</script>
 	</body>
 </html>
