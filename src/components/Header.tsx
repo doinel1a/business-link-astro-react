@@ -2,11 +2,12 @@ import { useState, useEffect } from 'react';
 import { faShareNodes } from '@fortawesome/free-solid-svg-icons';
 
 import useIsMobile from '../hooks/useIsMobile';
-import ButtonIcon from '../components/Buttons/ButtonIcon';
-import ButtonCopy from '../components/Buttons/ButtonCopy';
+import ButtonIcon from './Buttons/ButtonIcon';
+import ButtonCopy from './Buttons/ButtonCopy';
 import ThemeToggle from './ThemeToggle';
 
 import meta_tags from '../config/meta_tags';
+import details from '../config/details';
 
 export default function Header() {
 	const isMobile = useIsMobile();
@@ -42,6 +43,17 @@ export default function Header() {
 				)}
 				<ThemeToggle />
 			</div>
+			<div className='w-52 h-52 flex justify-center items-center mx-auto mb-6 p-1 rounded-full bg-accent-primary'>
+				<img
+					src={`${meta_tags.app_url}/hero-image.png`}
+					width={480}
+					height={480}
+					className='rounded-full'
+					alt='Hero image'
+				/>
+			</div>
+			<h1 className='text-center'>{details.name_surname}</h1>
+			<h2 className='text-center'>{details.role}</h2>
 		</header>
 	);
 }
