@@ -54,6 +54,11 @@ export default function Header() {
 			</div>
 			<h1 className='text-center'>{details.name_surname}</h1>
 			<h2 className='text-center'>{details.role}</h2>
+			<noscript>
+				<p className='w-full mt-6 text-xl text-center text-red-500'>
+					Enable JavaScript to enjoy all the features of this app.
+				</p>
+			</noscript>
 		</header>
 	);
 }
